@@ -2,12 +2,12 @@ import * as S from './Logo.styles'
 
 export type LogoProps = {
   /**
-   * Optional color. Defines only the text color for the logo
+   * Optional color. Defines only the text color for the logo.
    */
   color?: 'white' | 'black'
 
   /**
-   * Optional hideOnMobile
+   * Optional hideOnMobile. Hides the text for mobile viewports.
    */
   hideOnMobile?: boolean
 
