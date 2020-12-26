@@ -1,11 +1,12 @@
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
+
 import * as S from './Button.styles'
 
-export interface ButtonProps {
-  /**
-   * Optional children.
-   */
-  children?: React.ReactNode
+type ButtonTypes =
+  | AnchorHTMLAttributes<HTMLAnchorElement>
+  | ButtonHTMLAttributes<HTMLButtonElement>
 
+export type ButtonProps = {
   /**
    * Optional size.
    */
@@ -22,10 +23,10 @@ export interface ButtonProps {
   icon?: React.ReactNode
 
   /**
-   * Optional onClick. Click handler function.
+   * Optional as. Type of the HTML element.
    */
-  onClick?: () => (event: React.MouseEvent<HTMLButtonElement>) => void
-}
+  as?: React.ElementType
+} & ButtonTypes
 
 const Button = ({
   children,
