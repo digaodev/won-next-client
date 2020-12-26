@@ -9,15 +9,6 @@ export default {
     children: {
       type: 'string'
     }
-  },
-  parameters: {
-    backgrounds: {
-      default: 'dark',
-      values: [
-        { name: 'light', value: '#F8F8F8' },
-        { name: 'dark', value: '#333333' }
-      ]
-    }
   }
 } as Meta
 
@@ -26,4 +17,10 @@ const Template: Story<HeadingProps> = (args) => <Heading {...args} />
 export const Default = Template.bind({})
 Default.args = {
   children: 'Most Populars'
+}
+Default.parameters = {
+  layout: 'fullscreen',
+  backgrounds: {
+    default: 'dark'
+  }
 }

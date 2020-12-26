@@ -1,5 +1,6 @@
 import theme from 'styles/theme'
 
+// hack for type inference
 type Theme = typeof theme
 
 declare module 'styled-components' {
