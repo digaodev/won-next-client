@@ -1,5 +1,7 @@
 import * as S from './Heading.styles'
 
+export type LineColors = 'primary' | 'secondary'
+
 export interface HeadingProps {
   /**
    * Required children.
@@ -20,15 +22,33 @@ export interface HeadingProps {
    * Optional lineBottom. Shows a line at the bottom.
    */
   lineBottom?: boolean
+
+  /**
+   * Optional line color.
+   */
+  lineColor?: LineColors
+
+  /**
+   * Optional size.
+   */
+  size?: 'small' | 'medium'
 }
 
 const Heading = ({
   children,
   color = 'white',
   lineLeft = false,
-  lineBottom = false
+  lineBottom = false,
+  lineColor = 'primary',
+  size = 'medium'
 }: HeadingProps) => (
-  <S.Wrapper color={color} lineLeft={lineLeft} lineBottom={lineBottom}>
+  <S.Wrapper
+    color={color}
+    lineLeft={lineLeft}
+    lineBottom={lineBottom}
+    lineColor={lineColor}
+    size={size}
+  >
     {children}
   </S.Wrapper>
 )
