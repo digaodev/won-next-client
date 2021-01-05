@@ -5,7 +5,9 @@ import Logo, { LogoProps } from './Logo'
 export default {
   title: 'Logo',
   component: Logo,
-  args: {}
+  argTypes: {},
+  args: {},
+  parameters: {}
 } as Meta
 
 const Template: Story<LogoProps> = (args) => <Logo {...args} />

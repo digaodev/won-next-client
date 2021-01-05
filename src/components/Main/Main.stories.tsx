@@ -5,10 +5,12 @@ import Main, { MainProps } from './Main'
 export default {
   title: 'Main',
   component: Main,
+  argTypes: {},
   args: {
     title: 'title default',
     description: 'description default'
-  }
+  },
+  parameters: {}
 } as Meta
 
 const Template: Story<MainProps> = (args) => <Main {...args} />

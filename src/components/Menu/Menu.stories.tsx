@@ -5,7 +5,9 @@ import Menu, { MenuProps } from './Menu'
 export default {
   title: 'Menu',
   component: Menu,
-  argTypes: {}
+  argTypes: {},
+  args: {},
+  parameters: {}
 } as Meta
 
 const Template: Story<MenuProps> = (args) => <Menu {...args} />

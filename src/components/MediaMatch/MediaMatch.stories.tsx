@@ -5,7 +5,9 @@ import MediaMatch, { MediaMatchProps } from './MediaMatch'
 export default {
   title: 'MediaMatch',
   component: MediaMatch,
-  args: {}
+  argTypes: {},
+  args: {},
+  parameters: {}
 } as Meta
 
 export const Desktop: Story<MediaMatchProps> = (args) => (

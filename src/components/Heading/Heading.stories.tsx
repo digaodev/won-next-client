@@ -5,9 +5,18 @@ import Heading, { HeadingProps } from './Heading'
 export default {
   title: 'Heading',
   component: Heading,
-  args: {
+  argTypes: {
     children: {
       type: 'string'
+    }
+  },
+  args: {
+    children: 'Most Populars'
+  },
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: 'dark'
     }
   }
 } as Meta
@@ -15,12 +24,3 @@ export default {
 const Template: Story<HeadingProps> = (args) => <Heading {...args} />
 
 export const Default = Template.bind({})
-Default.args = {
-  children: 'Most Populars'
-}
-Default.parameters = {
-  layout: 'fullscreen',
-  backgrounds: {
-    default: 'dark'
-  }
-}

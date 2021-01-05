@@ -13,7 +13,9 @@ export default {
     icon: {
       type: ''
     }
-  }
+  },
+  args: {},
+  parameters: {}
 } as Meta
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />

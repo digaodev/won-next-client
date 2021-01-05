@@ -5,7 +5,9 @@ import Footer from './Footer'
 export default {
   title: 'Footer',
   component: Footer,
-  argTypes: {}
+  argTypes: {},
+  args: {},
+  parameters: {}
 } as Meta
 
 const Template: Story = (args) => (
@@ -15,4 +17,3 @@ const Template: Story = (args) => (
 )
 
 export const Default = Template.bind({})
-Default.argTypes = {}
