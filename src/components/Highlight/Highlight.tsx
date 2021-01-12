@@ -33,7 +33,7 @@ export type HighlightProps = {
   floatImage?: string
 
   /**
-   * Optional float image url
+   * Optional content alignment
    */
   alignment?: 'right' | 'left'
 }
